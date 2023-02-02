@@ -52,9 +52,9 @@ function App () {
   ]
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <NavBar onBack={() => { }}>官方动态</NavBar>
-      </header>
+      </header> */}
       <div className='app-mid'>
         <Swiper
           indicatorProps={{
@@ -62,10 +62,35 @@ function App () {
           }}
           defaultIndex={1}
         >
-          {items}
+          <Swiper.Item key={1}>
+            <div className="swiper-wrap">
+              <Image
+                src="/577889-cocktail-4k.jpeg"
+                fit='cover'
+              />
+            </div>
+          </Swiper.Item>
+          <Swiper.Item key={2}>
+            <div className="swiper-wrap">
+              <Image
+                src="/268154.jpeg"
+                fit='cover'
+              />
+            </div>
+          </Swiper.Item>
+          <Swiper.Item key={3}>
+            <div className="swiper-wrap">
+              <Image
+                src="/2727835.jpeg"
+                fit='cover'
+              />
+            </div>
+          </Swiper.Item>
         </Swiper>
         <div >
-          <iframe width="100%" src="//player.bilibili.com/player.html?aid=302617013&bvid=BV14P411V7bz&cid=820883107&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <Card title='视频教程' onClick={() => { }}>
+            <iframe width="100%" src="//player.bilibili.com/player.html?aid=302617013&bvid=BV14P411V7bz&cid=820883107&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          </Card>
         </div>
         <div>
           <Card title='文字教程' onClick={() => { }}>

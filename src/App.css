@@ -1,10 +1,12 @@
 .App {
   display: flex;
   flex-direction: column;
+  /* background-image: url('/public/background.jpg'); */
+  /* background-position: center center; */
 }
 
 .swiper-wrap {
-  height: 120px;
+  height: 240px;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -18,10 +20,10 @@
 }
 
 .app-mid {
-  height: calc(100vh - 45px - 49px);
+  height: calc(100vh - 49px);
   overflow-y: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
 }
 
 .footer {
